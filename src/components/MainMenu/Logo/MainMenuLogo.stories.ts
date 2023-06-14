@@ -1,4 +1,4 @@
-import MainMenuLogo, { type MainMenuLogoProps } from '@/components/MainMenuLogo/MainMenuLogo.vue'
+import MainMenuLogo, { type MainMenuLogoProps } from '@/components/MainMenu/Logo/MainMenuLogo.vue'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';

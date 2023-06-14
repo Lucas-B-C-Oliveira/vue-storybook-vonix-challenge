@@ -1,4 +1,4 @@
-import MainMenuItemButton, { type MainMenuItemButtonProps } from '@/components/MainMenuItemButton/MainMenuItemButton.vue'
+import MainMenuItemButton, { type MainMenuItemButtonProps } from '@/components/MainMenu/ItemButton/MainMenuItemButton.vue'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';

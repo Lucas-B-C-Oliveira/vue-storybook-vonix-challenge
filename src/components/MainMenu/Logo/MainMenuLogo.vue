@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SvgIconImporter from '@/components/SvgIconImporter.vue';
+
 type IconName = 'logo'
 
 export interface MainMenuLogoProps {

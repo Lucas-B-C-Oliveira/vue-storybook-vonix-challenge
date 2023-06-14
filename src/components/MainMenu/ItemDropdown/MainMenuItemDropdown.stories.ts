@@ -1,4 +1,4 @@
-import MainMenuItemDropdown, { type MainMenuItemDropdownProps } from '@/components/MainMenuItemDropdown/MainMenuItemDropdown.vue'
+import MainMenuItemDropdown, { type MainMenuItemDropdownProps } from '@/components/MainMenu/ItemDropdown/MainMenuItemDropdown.vue'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';
