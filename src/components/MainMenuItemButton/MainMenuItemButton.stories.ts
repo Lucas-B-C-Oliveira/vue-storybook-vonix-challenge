@@ -7,7 +7,6 @@ const meta = {
   title: 'Components/MainMenu/ItemButton',
   component: MainMenuItemButton,
   argTypes: {
-
     firstIconName: {
       name: 'Icon',
       options: ['api', 'phoneList'],
@@ -20,7 +19,6 @@ const meta = {
     routePath: {
       name: 'Route Path',
     },
-
   },
   tags: ['autodocs'],
 

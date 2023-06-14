@@ -7,15 +7,28 @@ const meta = {
   title: 'Components/MainMenu/ItemDropdown',
   component: MainMenuItemDropdown,
   argTypes: {
-
+    text: {
+      name: 'Label Text'
+    },
     firstIconName: {
+      name: 'Icon',
       options: ['dashboard', 'gear', 'phone', 'speechBubble', 'headset', 'user'],
       control: { type: 'radio' },
     },
     arrowDownIconName: {
+      name: 'Dropdown Icon',
       options: ['caretDown'],
       control: { type: 'radio' },
     },
+
+    isCurrentRoute: {
+      name: 'Active'
+    },
+
+    dropdownMenuOptions: {
+      name: 'Dropdown Options'
+    },
+
   },
   tags: ['autodocs'],
 
@@ -35,7 +48,10 @@ export const Primary: Story = {
     template: '<MainMenuItemDropdown v-bind="args" />'
   }),
   args: {
+    text: 'Chamadas',
+    isCurrentRoute: false,
     arrowDownIconName: 'caretDown',
+    firstIconName: 'phone',
     dropdownMenuOptions: [
       { routePath: '/', text: 'Todas as chamadas' },
       { routePath: '/', text: 'Abandono' },
@@ -50,9 +66,7 @@ export const Primary: Story = {
       { routePath: '/', text: 'Desempenho' },
       { routePath: '/', text: 'Atendimentos por horário' },
     ],
-    firstIconName: 'phone',
-    isCurrentRoute: false,
-    text: 'Chamadas',
+
   }
 }
 
