@@ -1,4 +1,4 @@
-import type { NavMenuButtonProps } from "@/components/NavigationMenu/Button/NavMenuButton.vue";
+import type { NavMenuButtonProps } from '@/components/NavigationMenu/Button/NavMenuButton.vue'
 
 
 const nextOnly: NavMenuButtonProps = {
