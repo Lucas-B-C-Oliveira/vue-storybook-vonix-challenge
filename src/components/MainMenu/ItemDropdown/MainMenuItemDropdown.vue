@@ -27,7 +27,7 @@ const props = defineProps<MainMenuItemDropdownProps>()
   <li v-if="props.dropdownMenuOptions.length > 1" @click="toggleDropdownMenu" class="menuItemContainer"
     :class="{ 'menuItemActive': dropdownMenuIsOpen || isCurrentRoute }">
 
-    <div class="firstIconTextGroup">
+    <div class="firstIconAndTextGroup">
       <SvgIconImporter :name="props.firstIconName" />
       {{ props.text }}
     </div>
@@ -50,7 +50,7 @@ const props = defineProps<MainMenuItemDropdownProps>()
 </template>
 
 <style scoped>
-.firstIconTextGroup {
+.firstIconAndTextGroup {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,6 +71,7 @@ const props = defineProps<MainMenuItemDropdownProps>()
   gap: 11.29px;
   background-color: #3D55AE;
   color: white;
+  white-space: nowrap;
   font-weight: bold;
   padding: 0px 13px 0px 18px;
   font-size: 0.75rem;
