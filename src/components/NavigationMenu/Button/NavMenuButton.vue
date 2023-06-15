@@ -12,7 +12,7 @@ defineProps<NavMenuButtonProps>()
 </script>
 
 <template>
-  <button @click="$emit('navMenuButtonClicked')" class="button" :class="variant">{{ text }}</button>
+  <button class="button" :class="variant">{{ text }}</button>
 </template>
 
 <style scoped>

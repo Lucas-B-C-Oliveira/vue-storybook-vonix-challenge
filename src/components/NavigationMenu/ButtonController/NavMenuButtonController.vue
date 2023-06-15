@@ -13,14 +13,14 @@ defineProps<NavMenuButtonControllerProps>()
 <template>
   <div class="container">
     <template v-if="state === 'buttons'">
-      <NavMenuButton v-bind="NavMenuButtonMock.previousInGroup" />
-      <NavMenuButton v-bind="NavMenuButtonMock.nextInGroup" />
+      <NavMenuButton @click="$emit('previousInGroupButtonClicked')" v-bind="NavMenuButtonMock.previousInGroup" />
+      <NavMenuButton @click="$emit('nextInGroupButtonClicked')" v-bind="NavMenuButtonMock.nextInGroup" />
     </template>
     <template v-else-if="state === 'nextOnly'">
-      <NavMenuButton v-bind="NavMenuButtonMock.nextOnly" />
+      <NavMenuButton @click="$emit('nextButtonClicked')" v-bind="NavMenuButtonMock.nextOnly" />
     </template>
     <template v-else-if="state === 'previousOnly'">
-      <NavMenuButton v-bind="NavMenuButtonMock.previousOnly" />
+      <NavMenuButton @click="$emit('previousButtonClicked')" v-bind="NavMenuButtonMock.previousOnly" />
     </template>
   </div>
 </template>
