@@ -15,7 +15,6 @@ const meta = {
     isCurrentRoute: {
       name: 'Active'
     },
-
     routePath: {
       name: 'Route Path',
     },
