@@ -1,4 +1,5 @@
 import MainMenuLogo, { type MainMenuLogoProps } from '@/components/MainMenu/Logo/MainMenuLogo.vue'
+import { Mock } from '@/components/MainMenu/Logo/mock'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';
@@ -33,10 +34,7 @@ export const Primary: Story = {
     },
     template: '<MainMenuLogo v-bind="args" />'
   }),
-  args: {
-    iconName: 'logo',
-    isCurrentRoute: false,
-  }
+  args: Mock.primary
 }
 
 

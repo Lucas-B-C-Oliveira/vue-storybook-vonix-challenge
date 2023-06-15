@@ -1,4 +1,5 @@
 import MainMenuItemDropdown, { type MainMenuItemDropdownProps } from '@/components/MainMenu/ItemDropdown/MainMenuItemDropdown.vue'
+import { Mock } from '@/components/MainMenu/ItemDropdown/mock'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';
@@ -39,7 +40,7 @@ export default meta;
 type Story = StoryObjProped<typeof MainMenuItemDropdown, MainMenuItemDropdownProps>;
 
 
-export const Primary: Story = {
+export const Dashboards: Story = {
   render: (args) => ({
     components: { MainMenuItemDropdown },
     setup() {
@@ -47,27 +48,63 @@ export const Primary: Story = {
     },
     template: '<MainMenuItemDropdown v-bind="args" />'
   }),
-  args: {
-    text: 'Chamadas',
-    isCurrentRoute: false,
-    arrowDownIconName: 'caretDown',
-    firstIconName: 'phone',
-    dropdownMenuOptions: [
-      { routePath: '/', text: 'Todas as chamadas' },
-      { routePath: '/', text: 'Abandono' },
-      { routePath: '/', text: 'Tipo' },
-      { routePath: '/', text: 'Número' },
-      { routePath: '/', text: 'Localidade' },
-      { routePath: '/', text: 'Operadora' },
-      { routePath: '/', text: 'Tronco' },
-      { routePath: '/', text: 'Horário' },
-      { routePath: '/', text: 'Duração' },
-      { routePath: '/', text: 'Filas' },
-      { routePath: '/', text: 'Desempenho' },
-      { routePath: '/', text: 'Atendimentos por horário' },
-    ],
+  args: Mock.dashboards
+}
 
-  }
+
+export const Calls: Story = {
+  render: (args) => ({
+    components: { MainMenuItemDropdown },
+    setup() {
+      return { args }
+    },
+    template: '<MainMenuItemDropdown v-bind="args" />'
+  }),
+  args: Mock.calls
+}
+
+export const Conversations: Story = {
+  render: (args) => ({
+    components: { MainMenuItemDropdown },
+    setup() {
+      return { args }
+    },
+    template: '<MainMenuItemDropdown v-bind="args" />'
+  }),
+  args: Mock.conversations
+}
+
+export const Employees: Story = {
+  render: (args) => ({
+    components: { MainMenuItemDropdown },
+    setup() {
+      return { args }
+    },
+    template: '<MainMenuItemDropdown v-bind="args" />'
+  }),
+  args: Mock.employees
+}
+
+export const Settings: Story = {
+  render: (args) => ({
+    components: { MainMenuItemDropdown },
+    setup() {
+      return { args }
+    },
+    template: '<MainMenuItemDropdown v-bind="args" />'
+  }),
+  args: Mock.settings
+}
+
+export const User: Story = {
+  render: (args) => ({
+    components: { MainMenuItemDropdown },
+    setup() {
+      return { args }
+    },
+    template: '<MainMenuItemDropdown v-bind="args" />'
+  }),
+  args: Mock.user
 }
 
 

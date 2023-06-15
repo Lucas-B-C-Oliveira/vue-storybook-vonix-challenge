@@ -1,4 +1,5 @@
 import MainMenuItemButton, { type MainMenuItemButtonProps } from '@/components/MainMenu/ItemButton/MainMenuItemButton.vue'
+import { Mock } from '@/components/MainMenu/ItemButton/mock'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';
@@ -27,8 +28,7 @@ export default meta;
 
 type Story = StoryObjProped<typeof MainMenuItemButton, MainMenuItemButtonProps>;
 
-
-export const Primary: Story = {
+export const Api: Story = {
   render: (args) => ({
     components: { MainMenuItemButton },
     setup() {
@@ -36,11 +36,19 @@ export const Primary: Story = {
     },
     template: '<MainMenuItemButton v-bind="args" />'
   }),
-  args: {
-    firstIconName: 'api',
-    isCurrentRoute: false,
-    routePath: '/'
-  }
+  args: Mock.api
+}
+
+
+export const PhoneList: Story = {
+  render: (args) => ({
+    components: { MainMenuItemButton },
+    setup() {
+      return { args }
+    },
+    template: '<MainMenuItemButton v-bind="args" />'
+  }),
+  args: Mock.phoneList
 }
 
 

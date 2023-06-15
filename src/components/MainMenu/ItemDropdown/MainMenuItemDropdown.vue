@@ -9,13 +9,15 @@ const toggleDropdownMenu = () => {
 };
 
 type FirstIconName = 'dashboard' | 'gear' | 'phone' | 'speechBubble' | 'headset' | 'user'
+type TextLabel = 'Dashboards' | 'Chamadas' | 'Agentes' | 'Configurações'
+type ArrowDownIconName = 'caretDown'
 type DropdownMenuOption = { routePath: string, text: string }
 
 export interface MainMenuItemDropdownProps {
   firstIconName: FirstIconName
-  text: string
+  text: TextLabel | string
   dropdownMenuOptions: DropdownMenuOption[]
-  arrowDownIconName: string
+  arrowDownIconName: ArrowDownIconName
   isCurrentRoute: boolean
 }
 
