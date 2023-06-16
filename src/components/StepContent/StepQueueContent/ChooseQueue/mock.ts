@@ -1,4 +1,4 @@
-import type { StepContentChooseQueueProps } from '@/components/StepContent/ChooseQueue/StepContentChooseQueue.vue'
+import type { StepContentChooseQueueProps } from '@/components/StepContent/StepQueueContent/ChooseQueue/StepQueueContentChooseQueue.vue'
 
 const primary: StepContentChooseQueueProps = {
   labelText: 'Escolha a fila *',

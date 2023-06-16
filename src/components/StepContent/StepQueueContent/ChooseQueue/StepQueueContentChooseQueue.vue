@@ -5,12 +5,12 @@ type Queue = {
   value: string
 }
 
-export interface StepContentChooseQueueProps {
+export interface StepQueueContentChooseQueueProps {
   labelText: string
   queues: Queue[]
 }
 
-defineProps<StepContentChooseQueueProps>()
+defineProps<StepQueueContentChooseQueueProps>()
 </script>
 
 <template>
