@@ -1,5 +1,5 @@
-import MainMenuItemDropdown, { type MainMenuItemDropdownProps } from '@/components/MainMenu/ItemDropdown/MainMenuItemDropdown.vue'
-import { Mock } from '@/components/MainMenu/ItemDropdown/mock'
+import MainMenuItemDropdown, { type MainMenuItemDropdownProps } from '@/components/Header/MainMenu/ItemDropdown/MainMenuItemDropdown.vue'
+import { Mock } from '@/components/Header/MainMenu/ItemDropdown/mock'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import NavMenuBreadcrumbs, { type BreadcrumbsProps } from '@/components/NavigationMenu/Breadcrumbs/NavMenuBreadcrumbs.vue'
-import NavMenuButtonController, { type NavMenuButtonControllerProps } from '@/components/NavigationMenu/ButtonController/NavMenuButtonController.vue'
-import { Mock as ButtonControllerMock } from '@/components/NavigationMenu/ButtonController/mock'
-import { Mock as NavMenuBreadcrumbsMock } from '@/components/NavigationMenu/Breadcrumbs/mock'
+import NavMenuBreadcrumbs, { type BreadcrumbsProps } from '@/components/Header/NavigationMenu/Breadcrumbs/NavMenuBreadcrumbs.vue'
+import NavMenuButtonController, { type NavMenuButtonControllerProps } from '@/components/Header/NavigationMenu/ButtonController/NavMenuButtonController.vue'
+import { Mock as ButtonControllerMock } from '@/components/Header/NavigationMenu/ButtonController/mock'
+import { Mock as NavMenuBreadcrumbsMock } from '@/components/Header/NavigationMenu/Breadcrumbs/mock'
 
 export interface NavMenuProps {
   buttonControllerState: NavMenuButtonControllerProps

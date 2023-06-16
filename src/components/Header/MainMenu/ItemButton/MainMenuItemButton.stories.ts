@@ -1,5 +1,5 @@
-import MainMenuItemButton, { type MainMenuItemButtonProps } from '@/components/MainMenu/ItemButton/MainMenuItemButton.vue'
-import { Mock } from '@/components/MainMenu/ItemButton/mock'
+import MainMenuItemButton, { type MainMenuItemButtonProps } from '@/components/Header/MainMenu/ItemButton/MainMenuItemButton.vue'
+import { Mock } from '@/components/Header/MainMenu/ItemButton/mock'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';

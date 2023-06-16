@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
-import NavMenuButton from '@/components/NavigationMenu/Button/NavMenuButton.vue'
-import { Mock as NavMenuButtonMock } from '@/components/NavigationMenu/Button/mock'
+import NavMenuButton from '@/components/Header/NavigationMenu/Button/NavMenuButton.vue'
+import { Mock as NavMenuButtonMock } from '@/components/Header/NavigationMenu/Button/mock'
 
 export interface NavMenuButtonControllerProps {
   state: 'buttons' | 'nextOnly' | 'previousOnly'

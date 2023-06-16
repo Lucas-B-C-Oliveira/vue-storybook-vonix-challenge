@@ -1,4 +1,4 @@
-import type { MainMenuLogoProps } from "@/components/MainMenu/Logo/MainMenuLogo.vue"
+import type { MainMenuLogoProps } from "@/components/Header/MainMenu/Logo/MainMenuLogo.vue"
 
 const primary: MainMenuLogoProps = {
   iconName: 'logo',

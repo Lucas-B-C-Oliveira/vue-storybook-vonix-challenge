@@ -1,5 +1,5 @@
-import NavMenu, { type NavMenuProps } from '@/components/NavigationMenu/NavMenu.vue'
-import { Mock } from '@/components/NavigationMenu/mock'
+import NavMenu, { type NavMenuProps } from '@/components/Header/NavigationMenu/NavMenu.vue'
+import { Mock } from '@/components/Header/NavigationMenu/mock'
 import { vueRouter } from 'storybook-vue3-router'
 
 import type { StoryObjProped } from '@/types/storybook.types';

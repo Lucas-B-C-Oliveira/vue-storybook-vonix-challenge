@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import MainMenuItemButton, { type MainMenuItemButtonProps } from '@/components/MainMenu/ItemButton/MainMenuItemButton.vue';
-import MainMenuItemDropdown, { type MainMenuItemDropdownProps } from '@/components/MainMenu/ItemDropdown/MainMenuItemDropdown.vue';
-import MainMenuLogo, { type MainMenuLogoProps } from '@/components/MainMenu/Logo/MainMenuLogo.vue';
+import MainMenuItemButton, { type MainMenuItemButtonProps } from '@/components/Header/MainMenu/ItemButton/MainMenuItemButton.vue'
+import MainMenuItemDropdown, { type MainMenuItemDropdownProps } from '@/components/Header/MainMenu/ItemDropdown/MainMenuItemDropdown.vue'
+import MainMenuLogo, { type MainMenuLogoProps } from '@/components/Header/MainMenu/Logo/MainMenuLogo.vue'
 
 
 export interface MainMenuProps {

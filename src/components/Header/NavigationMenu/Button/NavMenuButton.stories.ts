@@ -1,6 +1,6 @@
-import NavMenuButton, { type NavMenuButtonProps } from '@/components/NavigationMenu/Button/NavMenuButton.vue'
+import NavMenuButton, { type NavMenuButtonProps } from '@/components/Header/NavigationMenu/Button/NavMenuButton.vue'
 import { vueRouter } from 'storybook-vue3-router'
-import { Mock } from '@/components/NavigationMenu/Button/mock'
+import { Mock } from '@/components/Header/NavigationMenu/Button/mock'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';

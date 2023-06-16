@@ -1,7 +1,7 @@
-import type { MainMenuProps } from "@/components/MainMenu/MainMenu.vue"
-import { Mock as ItemDropdownMock } from "@/components/MainMenu/ItemDropdown/mock"
-import { Mock as ItemButtonMock } from "@/components/MainMenu/ItemButton/mock"
-import { Mock as LogoMock } from "@/components/MainMenu/Logo/mock"
+import type { MainMenuProps } from "@/components/Header/MainMenu/MainMenu.vue"
+import { Mock as ItemDropdownMock } from "@/components/Header/MainMenu/ItemDropdown/mock"
+import { Mock as ItemButtonMock } from "@/components/Header/MainMenu/ItemButton/mock"
+import { Mock as LogoMock } from "@/components/Header/MainMenu/Logo/mock"
 
 const primary: MainMenuProps = {
   logo: LogoMock.primary,

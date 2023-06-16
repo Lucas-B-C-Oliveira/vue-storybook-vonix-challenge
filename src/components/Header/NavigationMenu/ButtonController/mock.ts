@@ -1,4 +1,4 @@
-import type { NavMenuButtonControllerProps } from '@/components/NavigationMenu/ButtonController/NavMenuButtonController.vue'
+import type { NavMenuButtonControllerProps } from '@/components/Header/NavigationMenu/ButtonController/NavMenuButtonController.vue'
 
 const buttons: NavMenuButtonControllerProps = {
   state: 'buttons'

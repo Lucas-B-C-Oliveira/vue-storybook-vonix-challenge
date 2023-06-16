@@ -1,4 +1,4 @@
-import type { MainMenuItemButtonProps } from "@/components/MainMenu/ItemButton/MainMenuItemButton.vue"
+import type { MainMenuItemButtonProps } from "@/components/Header/MainMenu/ItemButton/MainMenuItemButton.vue"
 
 const api: MainMenuItemButtonProps = {
   firstIconName: 'api',

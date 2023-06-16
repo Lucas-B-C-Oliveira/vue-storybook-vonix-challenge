@@ -1,5 +1,5 @@
-import NavMenuBreadcrumbs, { type BreadcrumbsProps } from '@/components/NavigationMenu/Breadcrumbs/NavMenuBreadcrumbs.vue'
-import { Mock } from '@/components/NavigationMenu/Breadcrumbs/mock'
+import NavMenuBreadcrumbs, { type BreadcrumbsProps } from '@/components/Header/NavigationMenu/Breadcrumbs/NavMenuBreadcrumbs.vue'
+import { Mock } from '@/components/Header/NavigationMenu/Breadcrumbs/mock'
 import { vueRouter } from 'storybook-vue3-router'
 
 import type { StoryObjProped } from '@/types/storybook.types';

@@ -1,4 +1,4 @@
-import type { BreadcrumbsProps } from "@/components/NavigationMenu/Breadcrumbs/NavMenuBreadcrumbs.vue"
+import type { BreadcrumbsProps } from "@/components/Header/NavigationMenu/Breadcrumbs/NavMenuBreadcrumbs.vue"
 
 const primary: BreadcrumbsProps = {
   arrowIconName: 'caretLeft',

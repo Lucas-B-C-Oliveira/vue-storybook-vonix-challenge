@@ -1,5 +1,5 @@
-import MainMenu, { type MainMenuProps } from '@/components/MainMenu/MainMenu.vue'
-import { Mock } from '@/components/MainMenu/mock'
+import MainMenu, { type MainMenuProps } from '@/components/Header/MainMenu/MainMenu.vue'
+import { Mock } from '@/components/Header/MainMenu/mock'
 
 
 import type { Meta } from '@storybook/vue3';

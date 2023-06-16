@@ -1,5 +1,5 @@
-import NavMenuButtonController, { type NavMenuButtonControllerProps } from '@/components/NavigationMenu/ButtonController/NavMenuButtonController.vue'
-import { Mock } from '@/components/NavigationMenu/ButtonController/mock'
+import NavMenuButtonController, { type NavMenuButtonControllerProps } from '@/components/Header/NavigationMenu/ButtonController/NavMenuButtonController.vue'
+import { Mock } from '@/components/Header/NavigationMenu/ButtonController/mock'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';

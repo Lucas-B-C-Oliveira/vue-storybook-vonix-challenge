@@ -1,5 +1,5 @@
-import MainMenuLogo, { type MainMenuLogoProps } from '@/components/MainMenu/Logo/MainMenuLogo.vue'
-import { Mock } from '@/components/MainMenu/Logo/mock'
+import MainMenuLogo, { type MainMenuLogoProps } from '@/components/Header/MainMenu/Logo/MainMenuLogo.vue'
+import { Mock } from '@/components/Header/MainMenu/Logo/mock'
 
 import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';
