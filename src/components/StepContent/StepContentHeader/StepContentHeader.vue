@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-type StepTitle = 'Fila' | 'Arquivo' | 'Mapeamento'
+export type StepTitle = 'Fila' | 'Arquivo' | 'Mapeamento'
 
 export interface StepContentHeaderProps {
   title: string | StepTitle
