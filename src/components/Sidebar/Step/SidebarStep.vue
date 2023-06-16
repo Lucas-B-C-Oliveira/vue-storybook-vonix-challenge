@@ -2,7 +2,7 @@
 import SvgIconImporter from '@/components/SvgIconImporter.vue';
 
 
-type StepText = 'Arquivo' | 'Mapeamento do arquivo' | 'Mapeamento do perfilador' | 'Análise dos campos do arquivo' | 'Importação'
+type StepText = 'Fila' | 'Arquivo' | 'Mapeamento do arquivo' | 'Mapeamento do perfilador' | 'Análise dos campos do arquivo' | 'Importação'
 
 
 export interface SidebarStepProps {
