@@ -33,6 +33,12 @@ npm install
 npm run dev
 ```
 
+### Compile and Hot-Reload for Development Storybook
+
+```sh
+npm run storybook
+```
+
 ### Type-Check, Compile and Minify for Production
 
 ```sh
