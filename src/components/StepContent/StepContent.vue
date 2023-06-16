@@ -11,8 +11,7 @@ export interface StepContentProps {
   stepContentQueue?: StepQueueContentProps
 }
 
-const props = defineProps<StepContentProps>()
-
+defineProps<StepContentProps>()
 
 </script>
 
