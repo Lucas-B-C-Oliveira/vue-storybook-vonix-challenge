@@ -6,7 +6,7 @@ import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';
 
 const meta = {
-  title: 'Components/NavigationMenu/Button',
+  title: 'Components/Header/NavigationMenu/Button',
   component: NavMenuButton,
   argTypes: {
     text: {

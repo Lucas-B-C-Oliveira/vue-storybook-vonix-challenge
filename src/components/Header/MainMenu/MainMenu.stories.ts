@@ -6,7 +6,7 @@ import type { Meta } from '@storybook/vue3';
 import type { StoryObjProped } from '@/types/storybook.types';
 
 const meta = {
-  title: 'Components/MainMenu/MainMenu',
+  title: 'Components/Header/MainMenu/MainMenu',
   component: MainMenu,
   tags: ['autodocs'],
 

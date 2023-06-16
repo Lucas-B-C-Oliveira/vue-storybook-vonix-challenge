@@ -6,7 +6,7 @@ import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';
 
 const meta = {
-  title: 'Components/NavigationMenu/Breadcrumbs',
+  title: 'Components/Header/NavigationMenu/Breadcrumbs',
   component: NavMenuBreadcrumbs,
   argTypes: {
     title: {

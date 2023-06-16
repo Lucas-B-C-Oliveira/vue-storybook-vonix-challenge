@@ -5,7 +5,7 @@ import type { StoryObjProped } from '@/types/storybook.types';
 import type { Meta } from '@storybook/vue3';
 
 const meta = {
-  title: 'Components/MainMenu/Logo',
+  title: 'Components/Header/MainMenu/Logo',
   component: MainMenuLogo,
   argTypes: {
     iconName: {
