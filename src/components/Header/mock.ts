@@ -4,12 +4,7 @@ import { Mock as NavMenuMock } from '@/components/Header/NavigationMenu/mock'
 
 const primary: HeaderComponentProps = {
   mainMenuProps: MainMenuMock.primary,
-  navMenuProps: {
-    ...NavMenuMock.primary,
-    buttonControllerState: {
-      state: 'nextOnly',
-    }
-  }
+  navMenuProps: NavMenuMock.primary
 }
 
 
