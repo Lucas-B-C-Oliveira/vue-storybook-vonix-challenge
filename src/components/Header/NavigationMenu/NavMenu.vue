@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import NavMenuBreadcrumbs, { type BreadcrumbsProps } from '@/components/Header/NavigationMenu/Breadcrumbs/NavMenuBreadcrumbs.vue'
 import NavMenuButtonController, { type NavMenuButtonControllerProps } from '@/components/Header/NavigationMenu/ButtonController/NavMenuButtonController.vue'
-import { Mock as ButtonControllerMock } from '@/components/Header/NavigationMenu/ButtonController/mock'
-import { Mock as NavMenuBreadcrumbsMock } from '@/components/Header/NavigationMenu/Breadcrumbs/mock'
 
 export interface NavMenuProps {
   buttonControllerState: NavMenuButtonControllerProps
@@ -14,10 +12,10 @@ defineProps<NavMenuProps>()
 
 <template>
   <nav class="navMenuContainer">
-    <NavMenuBreadcrumbs v-bind="NavMenuBreadcrumbsMock.primary" />
+    <NavMenuBreadcrumbs v-bind="breadcrumbsData" />
     <NavMenuButtonController @previousInGroupButtonClicked="$emit('previousInGroupButtonClicked')"
       @nextInGroupButtonClicked="$emit('nextInGroupButtonClicked')" @nextButtonClicked="$emit('nextButtonClicked')"
-      @previousButtonClicked="$emit('previousButtonClicked')" v-bind="ButtonControllerMock.buttons" />
+      @previousButtonClicked="$emit('previousButtonClicked')" v-bind="buttonControllerState" />
   </nav>
 </template>
 
@@ -33,5 +31,6 @@ defineProps<NavMenuProps>()
   justify-content: space-between;
   border-bottom: 1px solid #CED4DA;
   border-radius: 0px;
+  align-items: center;
 }
 </style>
