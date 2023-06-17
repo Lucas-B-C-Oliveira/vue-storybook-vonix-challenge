@@ -16,6 +16,14 @@ const primary: FileTableProps = {
       columnName: 'Nome da coluna',
       celValue: 'Item da coluna'
     },
+    {
+      columnName: 'Nome da coluna',
+      celValue: 'Item da coluna'
+    },
+    {
+      columnName: 'Nome da coluna',
+      celValue: 'Item da coluna'
+    },
   ]
 }
 
