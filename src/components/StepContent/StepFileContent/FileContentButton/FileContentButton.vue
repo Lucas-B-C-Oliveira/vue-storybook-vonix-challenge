@@ -21,5 +21,8 @@ defineProps<FileContentButtonProps>()
   height: 24px;
   border: 1px solid #C5C5C5;
   border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
