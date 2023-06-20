@@ -5,6 +5,8 @@ import FileTable, { type FileTableProps } from '@/components/StepContent/StepFil
 import NextStepButton, { type NextStepButtonProps } from '@/components/StepContent/StepFileContent/NextStepButton/NextStepButton.vue';
 import FileNotFoundFeedback, { type FileNotFoundFeedbackProps } from '@/components/StepContent/StepFileContent/FileNotFoundFeedback/FileNotFoundFeedback.vue';
 
+import { computed } from 'vue'
+
 interface FileData extends FileTableProps {
   idKey: string
 }
@@ -18,12 +20,16 @@ export interface StepFileContentProps {
   state: 'selectAFile' | 'nextStep' | 'fileNotfound'
 }
 
-defineProps<StepFileContentProps>()
+const props = defineProps<StepFileContentProps>()
+
+const isSelectAFileState = computed(() => props.state === 'selectAFile')
+const isNextStepState = computed(() => props.state === 'nextStep')
+const isFileNotFoundState = computed(() => props.state === 'fileNotfound')
 
 </script>
 
 <template>
-  <section v-if="state === 'selectAFile'" class="stepFileContentContainer">
+  <section v-if="isSelectAFileState" class="stepFileContentContainer">
     <DragAndDropFile v-bind="dragAndDropProps" />
     <div class="tablesContainer">
       <FileContentHeader v-bind="fileContentHeaderProps" />
@@ -31,7 +37,7 @@ defineProps<StepFileContentProps>()
     </div>
   </section>
 
-  <div v-else-if="state === 'nextStep'" class="nextStepContainer">
+  <div v-else-if="isNextStepState" class="nextStepContainer">
     <section class="stepFileContentContainer">
       <DragAndDropFile v-bind="dragAndDropProps" />
       <div class="tablesContainer">
@@ -43,7 +49,7 @@ defineProps<StepFileContentProps>()
   </div>
 
 
-  <section v-else-if="state === 'fileNotfound'" class="stepFileContentContainer">
+  <section v-else-if="isFileNotFoundState" class="stepFileContentContainer">
     <DragAndDropFile v-bind="dragAndDropProps" />
     <div class="tablesContainer">
       <FileContentHeader v-bind="fileContentHeaderProps" />

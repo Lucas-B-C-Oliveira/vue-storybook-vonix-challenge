@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SvgIconImporter from '@/components/SvgIconImporter.vue';
-
+import { computed } from 'vue'
 
 type StepText = 'Fila' | 'Arquivo' | 'Mapeamento do arquivo' | 'Mapeamento do perfilador' | 'Análise dos campos do arquivo' | 'Importação'
 
@@ -11,21 +11,26 @@ export interface SidebarStepProps {
   state: 'current' | 'finished' | 'default'
 }
 
-defineProps<SidebarStepProps>()
+const props = defineProps<SidebarStepProps>()
+
+const isDefaultState = computed(() => props.state === 'default')
+const isCurrentState = computed(() => props.state === 'current')
+const isFinishedState = computed(() => props.state === 'finished')
+
 </script>
 
 <template>
-  <div v-if="state === 'default'" class="stepContainer">
+  <div v-if="isDefaultState" class="stepContainer">
     <SvgIconImporter name="defaultStep" />
     <p class="stepTextDefault">{{ text }}</p>
   </div>
 
-  <div v-if="state === 'current'" class="stepContainer">
+  <div v-if="isCurrentState" class="stepContainer">
     <SvgIconImporter name="currentStep" />
     <p class="stepTextCurrent">{{ text }}</p>
   </div>
 
-  <div v-if="state === 'finished'" class="finishedStepContainer">
+  <div v-if="isFinishedState" class="finishedStepContainer">
     <div class="stepContainer">
       <SvgIconImporter name="finishedStep" />
       <p class="stepTextFinished">{{ text }}</p>

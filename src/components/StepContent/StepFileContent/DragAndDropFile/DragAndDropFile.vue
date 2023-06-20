@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SvgIconImporter from '@/components/SvgIconImporter.vue'
+import { computed } from 'vue'
 
 export interface DragAndDropFileProps {
   state: 'selectedFile' | 'selectAFile'
@@ -13,19 +14,22 @@ export interface DragAndDropFileProps {
   trashIconName: string
 }
 
-defineProps<DragAndDropFileProps>()
+const props = defineProps<DragAndDropFileProps>()
+
+const isSelectAFileState = computed(() => props.state === 'selectAFile')
+const isSelectedFileState = computed(() => props.state === 'selectedFile')
 
 </script>
 
 <template>
-  <div v-if="state === 'selectAFile'" class="selectAFileContainer" @dragover="$emit('handleDragOver', $event)"
+  <div v-if="isSelectAFileState" class="selectAFileContainer" @dragover="$emit('handleDragOver', $event)"
     @drop="$emit('handleDrop', $event)" @click="$emit('handleClick', $event)">
     <SvgIconImporter :name="interactionTipIconName" />
     <p class="interactionTipText">{{ interactionTipText }}</p>
     <p class="fileTypeHintText">{{ fileTypeHintText }}</p>
     <input type="file" ref="fileInput" style="display: none;" @change="$emit('handleFileSelected', $event)" />
   </div>
-  <div v-else-if="state === 'selectedFile'" class="selectedFileContainer">
+  <div v-else-if="isSelectedFileState" class="selectedFileContainer">
     <SvgIconImporter :name="csvIconName" />
     <p class="interactionTipText">{{ fileNameText }}</p>
     <p class="fileTypeHintText">{{ fileSizeText }}</p>
