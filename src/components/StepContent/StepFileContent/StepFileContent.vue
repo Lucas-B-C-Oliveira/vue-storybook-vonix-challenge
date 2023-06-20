@@ -46,6 +46,7 @@ defineProps<StepFileContentProps>()
   <section v-else-if="state === 'fileNotfound'" class="stepFileContentContainer">
     <DragAndDropFile v-bind="dragAndDropProps" />
     <div class="tablesContainer">
+      <FileContentHeader v-bind="fileContentHeaderProps" />
       <FileNotFoundFeedback v-bind="fileNotFoundFeedbackProps" />
     </div>
   </section>
