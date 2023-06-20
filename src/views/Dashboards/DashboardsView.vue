@@ -22,7 +22,6 @@ defineProps<DashboardsViewProps>()
       <LeftSidebar v-bind="leftSidebarProps" />
       <StepContent v-bind="stepContentProps" @chooseQueueSelectChange="$emit('chooseQueueSelectChange', $event)" />
     </div>
-
   </div>
 </template>
 
