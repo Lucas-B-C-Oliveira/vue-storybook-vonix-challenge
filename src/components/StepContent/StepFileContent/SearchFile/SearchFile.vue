@@ -31,6 +31,18 @@ defineProps<SearchFileProps>()
   outline: none;
 }
 
+.searchFileInput:active {
+  width: 100%;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: #505050;
+  border: none;
+  outline: none;
+}
+
 
 .searchFileContainer {
   box-sizing: border-box;
