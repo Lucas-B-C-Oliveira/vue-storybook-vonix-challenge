@@ -64,6 +64,7 @@ defineProps<DragAndDropFileProps>()
   align-items: center;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   color: #495057;
 }
 
@@ -100,6 +101,7 @@ defineProps<DragAndDropFileProps>()
   background: #E7EDFF;
   border: 1px dashed #3D55AE;
   border-radius: 5px;
+  cursor: pointer;
 
 }
 </style>
