@@ -39,6 +39,7 @@ defineProps<NextStepButtonProps>()
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
+  cursor: pointer;
 
   color: #FFFFFF;
 }
