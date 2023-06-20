@@ -33,3 +33,15 @@ export const Queue: Story = {
   args: Mock.queue
 }
 
+
+export const File: Story = {
+  render: (args) => ({
+    components: { StepContent },
+    setup() {
+      return { args }
+    },
+    template: `<StepContent v-bind="args" />`
+  }),
+  args: Mock.file
+}
+
