@@ -31,7 +31,8 @@ defineProps<LeftSidebarProps>()
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 310px;
+  width: 100%;
+  min-width: 310px;
   min-height: 617px;
   height: 100%;
   padding: 50px 0px 0px 41px;
