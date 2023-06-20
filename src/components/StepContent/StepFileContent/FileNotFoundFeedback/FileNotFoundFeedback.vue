@@ -50,7 +50,9 @@ defineProps<FileNotFoundFeedbackProps>()
   line-height: 14px;
   display: flex;
   align-items: center;
+  width: 261px;
   text-align: center;
   color: #444444;
+  flex-wrap: wrap;
 }
 </style>
